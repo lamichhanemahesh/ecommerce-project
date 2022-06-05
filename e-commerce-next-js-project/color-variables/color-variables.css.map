@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAOA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6BE",
+    "sources": [
+        "color-variables.scss"
+    ],
+    "names": [],
+    "file": "color-variables.css"
+}
