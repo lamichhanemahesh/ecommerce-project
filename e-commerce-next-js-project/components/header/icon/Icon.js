@@ -1,29 +1,44 @@
 import classes from './Icon.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook,faTwitter,faYoutube,faInstagram} from "@fortawesome/free-brands-svg-icons";
+
 function Icon(){
     return (
-      <div class="header-ri">
-        <ul class="social-top">
+      <div className="social-icons" id="social-icons">
+        <ul className={classes.Social}>
           <li>
-            <a href="#" class="icon facebook">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a href="#" className={classes.Icon + " " + classes.facebook}>
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className={classes.MyIcons1}
+              />
               <span></span>
             </a>
           </li>
           <li>
-            <a href="#" class="icon twitter">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="#" className={classes.Icon + " " + classes.twitter}>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className={classes.MyIcons2}
+              />
               <span></span>
             </a>
           </li>
           <li>
-            <a href="#" class="icon pinterest">
-              <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            <a href="#" className={classes.Icon + " " + classes.youtube}>
+              <FontAwesomeIcon
+                icon={faYoutube}
+                className={classes.MyIcons3}
+              />
               <span></span>
             </a>
           </li>
           <li>
-            <a href="#" class="icon dribbble">
-              <i class="fa fa-dribbble" aria-hidden="true"></i>
+            <a href="#" className={classes.Icon + " " + classes.instagram}>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className={classes.MyIcons4}
+              />
               <span></span>
             </a>
           </li>

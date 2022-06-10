@@ -4,7 +4,7 @@ import Icon from "./icon/Icon";
 import Logo from "./logo/Logo";
 function Header(){
     return (
-      <header id="Header" className="Header">
+      <header id="Header" className={classes.Header}>
         <div className="container ">
           <div className={classes.HeaderContent}>
               <Logo />

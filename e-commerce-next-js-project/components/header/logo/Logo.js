@@ -2,16 +2,15 @@ import classes from "./Logo.module.css";
 import Auxiliary from "../../../hoc/Auxiliary/Auxiliary";
 function Logo(){
     return (
-      <div class="Logo">
+      <div className={classes.Logo}>
         <h1>
-          <a href="index.html">
+          <a href="#">
             <b>
-              T<br></br>H<br></br>E&nbsp;
+              T<br></br>H<br></br>E
             </b>
-            Big Store<span>The Best Supermarket</span>
+            Ktm Store<span>The Best Supermarket</span>
           </a>
         </h1>
-        ;
       </div>
     );
 }

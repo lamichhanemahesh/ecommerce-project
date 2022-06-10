@@ -1,31 +1,53 @@
 import classes from "./Card.module.css";
+import { faHeart, faUser,faArrowRight,faFileText,faShip } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Card(){
     return (
-      <div class="head-text">
-        <ul class="card">
+      <div className={classes.HeadText}>
+        <ul className={classes.Card}>
           <li>
             <a href="wishlist.html">
-              <i class="fa fa-heart" aria-hidden="true"></i>Wishlist
+              <FontAwesomeIcon
+                icon={faHeart}
+                style={{ color: "#FAB005", marginRight: "5px" }}
+              />
+              Wishlist
             </a>
           </li>
           <li>
             <a href="login.html">
-              <i class="fa fa-user" aria-hidden="true"></i>Login
+              <FontAwesomeIcon
+                icon={faUser}
+                style={{ color: "#FAB005", marginRight: "5px" }}
+              />
+              Login
             </a>
           </li>
           <li>
             <a href="register.html">
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>Register
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                style={{ color: "#FAB005", marginRight: "5px" }}
+              />
+              Register
             </a>
           </li>
           <li>
             <a href="about.html">
-              <i class="fa fa-file-text-o" aria-hidden="true"></i>Order History
+              <FontAwesomeIcon
+                icon={faFileText}
+                style={{ color: "#FAB005", marginRight: "5px" }}
+              />
+              Order History
             </a>
           </li>
           <li>
             <a href="shipping.html">
-              <i class="fa fa-ship" aria-hidden="true"></i>Shipping
+              <FontAwesomeIcon
+                icon={faShip}
+                style={{ color: "#FAB005", marginRight: "5px" }}
+              />
+              Shipping
             </a>
           </li>
         </ul>

@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=Icon.module.css.map */
+.Social li {
+  display: inline-block;
+}
+
+.Social li .Icon {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  margin: 0 2px;
+  position: relative;
+  text-align: center;
+}
+
+.Social li .Icon .MyIcons1 {
+  color: #3B5998;
+}
+
+.Social li .Icon .MyIcons2 {
+  color: #4099ff;
+}
+
+.Social li .Icon .MyIcons3 {
+  color: #CB2028;
+}
+
+.Social li .Icon .MyIcons4 {
+  color: #E04D84;
+}
+
+.Social li .Icon span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.Social li .Icon:hover span {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  margin: -18px;
+}
+
+.Social li .Icon:hover .MyIcons1, .Social li .Icon:hover .MyIcons2, .Social li .Icon:hover .MyIcons3, .Social li .Icon:hover .MyIcons4 {
+  color: white;
+}
+
+.Social li .twitter span {
+  background-color: #4099ff;
+}
+
+.Social li .facebook span {
+  background-color: #3B5998;
+}
+
+.Social li .youtube span {
+  background-color: #CB2028;
+}
+
+.Social li .instagram span {
+  background-color: #E04D84;
+}
+/*# sourceMappingURL=Icon.module.css.map */

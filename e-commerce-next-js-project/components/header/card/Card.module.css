@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=Card.module.css.map */
+.HeadText {
+  margin: 1rem 0;
+}
+
+.HeadText .Card li {
+  display: inline-block;
+}
+
+.HeadText .Card li a {
+  display: inline-block;
+  color: #333;
+  font-size: 0.9em;
+  margin: 0 0.5em;
+}
+/*# sourceMappingURL=Card.module.css.map */
