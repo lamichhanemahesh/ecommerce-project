@@ -1,16 +1,23 @@
-import { Avatar, Button, List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core";
 import ProductList from './ProductList';
+import { useState,useEffect } from "react";
 import {Product} from '../../app/models/product';
-interface Props{
-    products: Product[];
-    addProduct: () => void;
-}
 
-function Catalog({products,addProduct}: Props){
+function Catalog(){
+  const [products, setProduct] = useState<Product[]>([]);
+
+  const https = require("https");
+  const agent = new https.Agent({
+    rejectUnauthorized: false,
+  });
+
+  useEffect(() => {
+    fetch("http://localhost:8080/ecommerce/product")
+      .then((response) => response.json())
+      .then((data) => setProduct(data));
+  }, []);
     return (
       <>
         <ProductList products={products}/>
-        <Button variant='contained' onClick={addProduct}>Add Product</Button>
       </>
     );
 }
