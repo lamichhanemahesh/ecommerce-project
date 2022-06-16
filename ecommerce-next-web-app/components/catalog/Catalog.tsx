@@ -1,14 +1,10 @@
-import ProductList from './ProductList';
+import ProductList from './productlist/ProductList';
 import { useState,useEffect } from "react";
-import {Product} from '../../app/models/product';
+import {Product} from '../../models/product';
 
 function Catalog(){
   const [products, setProduct] = useState<Product[]>([]);
 
-  const https = require("https");
-  const agent = new https.Agent({
-    rejectUnauthorized: false,
-  });
 
   useEffect(() => {
     fetch("http://localhost:8080/ecommerce/product")
@@ -17,7 +13,7 @@ function Catalog(){
   }, []);
     return (
       <>
-        <ProductList products={products}/>
+        <ProductList products={products} />
       </>
     );
 }

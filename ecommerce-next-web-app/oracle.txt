@@ -1,0 +1,14 @@
+window user information:
+username: software284
+password:software
+
+Global database name:orcl
+
+Users:->
+
+
+username:
+password:
+
+username:
+password:
