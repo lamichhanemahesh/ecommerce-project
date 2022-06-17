@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Product } from "../../../../models/product";
 import { Avatar, CardHeader } from "@mui/material";
+import Link from 'next/link';
 interface Props {
   product: Product;
 }
@@ -38,8 +39,10 @@ function ProductCard({ product }: Props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Add To Cart</Button>
-        <Button size="small">View</Button>
+        <Button  size="small">Add To Cart</Button>
+        <Button  size="small">
+          <Link href= {`/${product.id}`}>View</Link>
+        </Button>
       </CardActions>
     </Card>
   );

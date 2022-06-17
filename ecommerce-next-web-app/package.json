@@ -11,13 +11,16 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@material-ui/styles": "^4.11.5",
     "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.0.1",
     "@mui/lab": "^5.0.0-alpha.48",
     "@mui/material": "^5.0.1",
+    "axios": "^0.27.2",
     "next": "12.1.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-toastify": "^9.0.4"
   },
   "devDependencies": {
     "@types/node": "^12.20.26",

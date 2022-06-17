@@ -29,7 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		http.cors()
 			.and()
 			.csrf().disable().authorizeRequests()
-			.antMatchers("/ecommerce/**").permitAll()
+			.antMatchers("/ecommerce/**","/error/**").permitAll()
 //			.antMatchers("/v1/books/{bookId}").hasAuthority("USER")
 //			.antMatchers("/v1/books/{bookId}").hasAnyAuthority("USER","ADMIN")
 //			.antMatchers("/v1/books").hasAuthority("ADMIN")
