@@ -12,7 +12,7 @@ function AboutPageLayout() {
           <Button
             variant="contained"
             onClick={() =>
-              error.TestError.get400Error()}
+              error.TestError.get400Error().catch((error) => console.log(error))}
           >
             Test 400 Error
           </Button>

@@ -6,9 +6,12 @@ const responseBody = (response:AxiosResponse) => response.data;
 axios.interceptors.response.use(response => {
     return response;
 },(error: AxiosError) => {
-    const{status,data} = error.response!;
+    const{data,status} = error.response!;
     switch (status) {
       case 400:
+        toast.error(status);
+        break;
+      case 404:
         toast.error(status);
         break;
       case 401:
